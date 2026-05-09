@@ -11,8 +11,7 @@ export class StaticSite extends Construct {
     super(parent, name);
 
     const bucketName =
-      `node-react-shop-${cdk.Aws.ACCOUNT_ID}` +
-      `-${cdk.Aws.REGION}-${cdk.Names.uniqueId(this)}`;
+      `node-react-shop-${cdk.Aws.ACCOUNT_ID}` + `-${cdk.Aws.REGION}`;
 
     const siteBucket = new s3.Bucket(this, "websiteBucket", {
       bucketName: bucketName,
