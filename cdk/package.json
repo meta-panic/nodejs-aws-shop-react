@@ -9,7 +9,6 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "deploy": "npm run build && cd infra && cdk deploy --require-approval never",
     "destroy": "cd infra && cdk destroy --force"
   },
   "devDependencies": {
